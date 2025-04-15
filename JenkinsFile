@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-username/your-repo.git' // replace with your actual repo
+                git 'https://github.com/brijeshprajapati53/DotNet-API-AKS-Pipeline.git' // replace with your actual repo
             }
         }
 
