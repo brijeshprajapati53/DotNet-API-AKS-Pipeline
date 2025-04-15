@@ -2,6 +2,7 @@ pipeline {
     agent any
 
     environment {
+        AZURE_CREDENTIALS_ID = 'azure-service-principal'
         ACR_NAME = "acrbrijesh123"
         ACR_LOGIN_SERVER = "acrbrijesh123.azurecr.io"
         IMAGE_NAME = "mywebapi"
