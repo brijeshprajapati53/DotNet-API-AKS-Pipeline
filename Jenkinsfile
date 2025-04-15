@@ -79,10 +79,10 @@ pipeline {
 
     post {
         failure {
-            echo "❌ Build failed."
+            echo " Build failed."
         }
         success {
-            echo "✅ Application deployed successfully to AKS!"
+            echo " Application deployed successfully to AKS!"
         }
     }
 }
