@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        AZURE_CREDENTIALS_ID = 'azure-service-principal'
+        AZURE_CREDENTIALS_ID = 'azure-service-principal' // Must be configured in Jenkins credentials
         ACR_NAME = "acrbrijesh123"
         ACR_LOGIN_SERVER = "acrbrijesh123.azurecr.io"
         IMAGE_NAME = "mywebapi"
@@ -14,7 +14,24 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/brijeshprajapati53/DotNet-API-AKS-Pipeline.git' // replace with your actual repo
+                git 'https://github.com/brijeshprajapati53/DotNet-API-AKS-Pipeline.git'
+            }
+        }
+
+        stage('Azure Login') {
+            steps {
+                withCredentials([azureServicePrincipal(
+                    credentialsId: "${AZURE_CREDENTIALS_ID}",
+                    subscriptionIdVariable: 'AZ_SUBSCRIPTION_ID',
+                    clientIdVariable: 'AZ_CLIENT_ID',
+                    clientSecretVariable: 'AZ_CLIENT_SECRET',
+                    tenantIdVariable: 'AZ_TENANT_ID'
+                )]) {
+                    bat '''
+                        az login --service-principal -u %AZ_CLIENT_ID% -p %AZ_CLIENT_SECRET% --tenant %AZ_TENANT_ID%
+                        az account set --subscription %AZ_SUBSCRIPTION_ID%
+                    '''
+                }
             }
         }
 
@@ -27,7 +44,7 @@ pipeline {
             }
         }
 
-        stage('Build Docker Image') {
+        stage('Docker Build & Push') {
             steps {
                 bat """
                     az acr login --name %ACR_NAME%
@@ -36,14 +53,6 @@ pipeline {
                 """
             }
         }
-
-stage('Push Docker Image to ACR') {
-      steps {
-        bat 'az acr login --name %ACR_NAME%'
-        bat 'docker push %ACR_NAME%.azurecr.io/%IMAGE_NAME%:latest'
-      }
-    }
-
 
         stage('AKS Authentication') {
             steps {
