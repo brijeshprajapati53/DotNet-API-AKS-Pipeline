@@ -13,10 +13,11 @@ pipeline {
 
     stages {
         stage('Checkout') {
-            steps {
-                git 'https://github.com/brijeshprajapati53/DotNet-API-AKS-Pipeline.git'
-            }
-        }
+    steps {
+        git branch: 'main', url: 'https://github.com/brijeshprajapati53/DotNet-API-AKS-Pipeline.git'
+    }
+}
+
 
         stage('Azure Login') {
             steps {
