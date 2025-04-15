@@ -1,0 +1,74 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Cap\\Cap-Training\\Phase-3-(27-March-25  to  17-April-25)-Cloud Platform\\Labs\\06_Microservices\\Day-1-(15-4-25)\\Assignment\\ApiContainer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EE686B3E-46E5-4950-846D-69222DAFCE75}|ApiContainer\\ApiContainer.csproj|d:\\cap\\cap-training\\phase-3-(27-march-25  to  17-april-25)-cloud platform\\labs\\06_microservices\\day-1-(15-4-25)\\assignment\\apicontainer\\apicontainer\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{EE686B3E-46E5-4950-846D-69222DAFCE75}|ApiContainer\\ApiContainer.csproj|solutionrelative:apicontainer\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE686B3E-46E5-4950-846D-69222DAFCE75}|ApiContainer\\ApiContainer.csproj|d:\\cap\\cap-training\\phase-3-(27-march-25  to  17-april-25)-cloud platform\\labs\\06_microservices\\day-1-(15-4-25)\\assignment\\apicontainer\\apicontainer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE686B3E-46E5-4950-846D-69222DAFCE75}|ApiContainer\\ApiContainer.csproj|solutionrelative:apicontainer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 629,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\Cap\\Cap-Training\\Phase-3-(27-March-25  to  17-April-25)-Cloud Platform\\Labs\\06_Microservices\\Day-1-(15-4-25)\\Assignment\\ApiContainer\\ApiContainer\\Dockerfile",
+              "RelativeDocumentMoniker": "ApiContainer\\Dockerfile",
+              "ToolTip": "D:\\Cap\\Cap-Training\\Phase-3-(27-March-25  to  17-April-25)-Cloud Platform\\Labs\\06_Microservices\\Day-1-(15-4-25)\\Assignment\\ApiContainer\\ApiContainer\\Dockerfile",
+              "RelativeToolTip": "ApiContainer\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-15T06:07:24.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Cap\\Cap-Training\\Phase-3-(27-March-25  to  17-April-25)-Cloud Platform\\Labs\\06_Microservices\\Day-1-(15-4-25)\\Assignment\\ApiContainer\\ApiContainer\\Program.cs",
+              "RelativeDocumentMoniker": "ApiContainer\\Program.cs",
+              "ToolTip": "D:\\Cap\\Cap-Training\\Phase-3-(27-March-25  to  17-April-25)-Cloud Platform\\Labs\\06_Microservices\\Day-1-(15-4-25)\\Assignment\\ApiContainer\\ApiContainer\\Program.cs",
+              "RelativeToolTip": "ApiContainer\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T06:07:12.922Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 139,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 16,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

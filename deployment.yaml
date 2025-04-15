@@ -1,0 +1,34 @@
+# deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mywebapi-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mywebapi
+  template:
+    metadata:
+      labels:
+        app: mywebapi
+    spec:
+      containers:
+      - name: mywebapi
+        image: acrbrijesh123.azurecr.io/mywebapi:latest
+        ports:
+        - containerPort: 8080
+---
+# service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: mywebapi-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: mywebapi
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
